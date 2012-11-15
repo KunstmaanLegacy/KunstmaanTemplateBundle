@@ -1,0 +1,26 @@
+{
+    "name": "kunstmaan/template-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony2 KunstmaanTemplateBundle",
+    "keywords": [],
+    "homepage": "https://github.com/Kunstmaan/KunstmaanTemplateBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kunstmaan Team",
+            "homepage": "http://www.kunstmaan.be/",
+            "email": "support@kunstmaan.be"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/symfony": "2.1.*",
+        "gedmo/doctrine-extensions": "*",
+    },
+    "autoload": {
+        "psr-0": { "Kunstmaan\\TemplateBundle": "" }
+    },
+    "target-dir": "Kunstmaan/TemplateBundle"
+}
+
