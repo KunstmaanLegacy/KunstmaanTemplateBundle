@@ -16,7 +16,7 @@
     "require": {
         "php": ">=5.3.3",
         "symfony/symfony": "2.1.*",
-        "gedmo/doctrine-extensions": "*",
+        "gedmo/doctrine-extensions": "*"
     },
     "autoload": {
         "psr-0": { "Kunstmaan\\TemplateBundle": "" }
