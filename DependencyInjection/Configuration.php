@@ -20,10 +20,70 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('kunstmaan_template');
 
+        $rootNode
+            ->children()
+                ->arrayNode('templates')
+                    ->useAttributeAsKey('template')
+                    ->prototype('array')
+                        ->children()
+                            ->scalarNode('name')->end()
+                            ->arrayNode('regions')
+                                ->isRequired()
+                                ->requiresAtLeastOneElement()
+                                ->prototype('scalar')->end()
+                            ->end()
+                            ->append($this->addLayoutNode())
+                            ->append($this->addPagesNode())
+                        ->end()
+                    ->end()
+                ->end()
+            ->end();
+
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for
         // more information on that topic.
 
         return $treeBuilder;
+    }
+
+    public function addLayoutNode()
+    {
+        $builder = new TreeBuilder();
+        $node = $builder->root('layout');
+
+        $node
+            ->isRequired()
+            ->requiresAtLeastOneElement()
+            ->prototype('array')
+                ->prototype('variable')->end()
+            ->end();
+
+        return $node;
+    }
+
+    public function addPagesNode()
+    {
+        $builder = new TreeBuilder();
+        $node = $builder->root('pages');
+
+        $node
+            ->isRequired()
+            ->requiresAtLeastOneElement()
+            ->prototype('array')
+                ->prototype('array')
+                    ->children()
+                        ->arrayNode('collections')
+                            ->isRequired()
+                            ->requiresAtLeastOneElement()
+                            ->prototype('scalar')->end()
+                        ->end()
+                        ->arrayNode('include')
+                            ->prototype('scalar')->end()
+                        ->end()
+                    ->end()
+                ->end()
+            ->end();
+
+        return $node;
     }
 }

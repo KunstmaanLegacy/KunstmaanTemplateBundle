@@ -1,6 +1,8 @@
 KunstmaanTemplateBundle by Kunstmaan
 ====================================
 
+** Currently under development, not usable yet!!! **
+
 About
 -----
 The KunstmaanTemplateBundle for Symfony 2 is part of the bundles we use to build custom and flexible applications at Kunstmaan.

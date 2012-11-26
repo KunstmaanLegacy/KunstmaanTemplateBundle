@@ -1,0 +1,14 @@
+{% if title is defined and title is not empty %}
+<h1>{{ title }}</h1>
+{% endif %}
+<section class="pp-new">
+{% for row in layout %}
+    <div class="row-fluid">
+    {% for block in row %}
+        <div class="span{{ block.span }}">
+            {% include  %}
+        </div>
+    {% endfor %}
+    </div>
+{% endfor %}
+</section>

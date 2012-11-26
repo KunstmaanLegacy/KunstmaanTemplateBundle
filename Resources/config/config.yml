@@ -1,0 +1,2 @@
+parameters:
+#    kunstmaan_pageparts.edit_node.listener.class: Kunstmaan\TemplateBundle\EventListener\NodeListener

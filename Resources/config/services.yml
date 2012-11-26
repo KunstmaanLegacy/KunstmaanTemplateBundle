@@ -1,7 +1,12 @@
 parameters:
-#    kunstmaan_template.example.class: Kunstmaan\TemplateBundle\Example
+    kunstmaan_template.template.manager.class: 'Kunstmaan\TemplateBundle\Helper\TemplateManager'
+    kunstmaan_template.template.configuration.class: 'Kunstmaan\TemplateBundle\Helper\TemplateConfiguration'
 
 services:
-#    kunstmaan_template.example:
-#        class: %kunstmaan_template.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
+    kunstmaan_template.template.configuration:
+        class: %kunstmaan_template.template.configuration.class%
+        arguments:
+          - %kunstmaan_template.templates%
+
+    kunstmaan_template.template.manager:
+        class: %kunstmaan_template.template.manager.class%
