@@ -1,8 +1,8 @@
 {
     "name": "kunstmaan/template-bundle",
     "type": "symfony-bundle",
-    "description": "Symfony2 KunstmaanTemplateBundle",
-    "keywords": [],
+    "description": "You want to provide your users with a clean and intuitive admin interface so they can focus on content and have a pretty good overview of the content that will be visible on their website. We are creating the KunstmaanTemplateBundle to help you and your users achieve that goal by allowing you to create basic templates of your pages in the backend. That way your users will know how the page layout looks like in the admin area and you can enforce some rules, like adding a big banner in the small sidebar is a no-no.",
+    "keywords": [ "kunstmaan", "cms", "templating"],
     "homepage": "https://github.com/Kunstmaan/KunstmaanTemplateBundle",
     "license": "MIT",
     "authors": [
