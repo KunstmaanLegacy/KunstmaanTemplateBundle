@@ -1,42 +1,11 @@
-KunstmaanTemplateBundle by Kunstmaan
-====================================
-
-** Currently under development, not usable yet!!! **
-
-About
------
-The KunstmaanTemplateBundle for Symfony 2 is part of the bundles we use to build custom and flexible applications at Kunstmaan.
-You have to install this bundle in order to work with page templates.
-
-[![Build Status](https://secure.travis-ci.org/Kunstmaan/KunstmaanTemplateBundle.png?branch=master)](http://travis-ci.org/Kunstmaan/KunstmaanTemplateBundle)
 
 
-Installation requirements
--------------------------
-You should be able to get Symfony 2 up and running before you can install the KunstmaanTemplateBundle.
+# KunstmaanTemplateBundle [![Build Status](https://travis-ci.org/Kunstmaan/KunstmaanTemplateBundle.png?branch=master)](http://travis-ci.org/Kunstmaan/KunstmaanTemplateBundle)
 
-Installation instructions
--------------------------
-Assuming you have installed composer.phar or composer binary:
+You want to provide your users with a clean and intuitive admin interface so they can focus on content and have a pretty good overview of the content that will be visible on their website. We are creating the KunstmaanTemplateBundle to help you and your users achieve that goal by allowing you to create basic templates of your pages in the backend. That way your users will know how the page layout looks like in the admin area and you can enforce some rules, like adding a big banner in the small sidebar is a no-no.
 
-``` bash
-$ composer require kunstmaan/template-bundle
-```
+More information about our bundles: [http://bundles.kunstmaan.be](http://bundles.kunstmaan.be).
 
-Add the KunstmaanTemplateBundle to your AppKernel.php file:
+## Installation
 
-```
-new Kunstmaan\TemplateBundle\KunstmaanTemplateBundle(),
-```
-
-Contact
--------
-Kunstmaan (support@kunstmaan.be)
-
-Download
---------
-You can also clone the project with Git by running:
-
-```
-$ git clone git://github.com/Kunstmaan/KunstmaanTemplateBundle
-```
+This bundle is compatible with all Symfony 2.1.* releases. More information about installing can be found in this line by line walkthrough of installing Symfony and all our bundles, please refer to the [Getting Started guide](http://bundles.kunstmaan.be/doc/01_GettingStarted.html) and enjoy the full blown experience.
